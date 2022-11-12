@@ -4,6 +4,8 @@
 
 #include <SFML/Graphics.hpp>
 
+#include "src/vec2.cpp"
+
 const uint screenWidth = 1080;
 const uint screenHeight = 720;
 const std::string gameName = "My Game";
@@ -34,6 +36,12 @@ int main()
 
   drawables.push_back(circlePtr);
   drawables.push_back(textPtr);
+
+  Vec2 v(1, 2);
+  Vec2 v1(2, 3);
+  Vec2 vr = v + v1;
+
+  std::cout << vr.x << "\n";
 
   while (window.isOpen())
   {
