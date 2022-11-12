@@ -73,8 +73,8 @@ float Vec2::length() const
 
 void Vec2::normalize()
 {
-  x /= this->length();
-  y /= this->length();
+  x /= length();
+  y /= length();
 }
 
 Vec2 &Vec2::add(const Vec2 &v)
