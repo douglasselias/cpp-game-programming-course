@@ -1,8 +1,8 @@
 cxx := "clang++"
-flags := "src/*.cpp -std=c++17 -Isrc -Os -Wall -Werror -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lraylib -lSDL2 -D FLAG_SFML -o"
+flags := "src/*.cpp -std=c++17 -Isrc -Os -Wall -Werror -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -o"
 version := "0.0.0"
 build-path := "build"
-build-file := build-path / "juicy-breakout-v" + version
+build-file := build-path / "game-v" + version
 main := "main.cpp"
 
 run:
